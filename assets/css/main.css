@@ -3152,6 +3152,7 @@ button:disabled,
 }
 
 .features article {
+	/* top | right | bottom | left */
 	padding: 1.75em 1.75em 1.75em 1.75em;
 	background-color: #353849;
 	border-radius: 5px;
@@ -3190,7 +3191,7 @@ button:disabled,
 @media screen and (max-width: 736px) {
 
 	.features article {
-		padding: 1.5em 1.5em 0.1em 1.5em;
+		padding: 1.5em 1.5em 1.5em 1.5em;
 		margin: 0.875em 1.75em 0.875em 0;
 		width: calc(50% - 0.875em - 1px);
 	}
@@ -3200,6 +3201,11 @@ button:disabled,
 		margin-left: -1.5em;
 		margin-top: -1.5em;
 		width: calc(100% + 3em);
+	}
+
+	#header h1 a {
+		border: 0;
+		visibility: hidden;
 	}
 
 }
@@ -3326,9 +3332,12 @@ button:disabled,
 	#header {
 		height: 2.75em;
 		line-height: 2.75em;
+		padding: 10px;
 	}
 
 	#header nav {
+		width: 100%;
+		text-align: center;
 		top: 0;
 		right: 0;
 		height: inherit;
@@ -4294,7 +4303,7 @@ body.is-preload #banner p {
 @media screen and (max-width: 736px) {
 
 	#footer {
-		margin-top: -2.5em;
+		margin-top: -9em;
 		padding-top: 2.5em;
 	}
 
@@ -4343,7 +4352,8 @@ body.is-preload #banner p {
 	border-color: white;
 	border-radius: 5px;
 	padding: 5px;
-	margin-right: 10px;
+	/* top | right | bottom | left */
+	margin: 10px 3px 0px 0px;
 	text-transform: capitalize;
 }
 
@@ -4367,7 +4377,7 @@ body.is-preload #banner p {
 	padding: 5px;
 	border-radius: 6px;
 
-	right: 10%;
+	left: 10%;
 	bottom: 100%;
 
 	/* Position the tooltip text - see examples below! */
