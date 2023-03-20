@@ -16,4 +16,4 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
 end
 
-#gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll"
