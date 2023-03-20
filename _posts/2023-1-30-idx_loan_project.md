@@ -1,16 +1,23 @@
 ---
 title: "ID/X Loan Prediction"
+layout: single
+classes: wide
 categories:
   - Portfolio
 tags:
   - Portfolio
   - Machine Learning
   - Supervised Learning
-toc: true
+excerpt: "In january 2023, I got an opportunity to create machine learning models for evaluating Loan Application in ID/X. This problem classify as supervised learning. But interestingly we don't have a target label to begin with. Therefore, we need to define using available features."
+# toc: true
 ---
 
-In january 2023, I got an opportunity to create machine learning models for evaluating Loan Application in ID/X. This problem classify as supervised learning. But interestingly we don't have a target label to begin with. Therefore, we need to define using available features.
 
+## Project Report
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTcaRuNHESeRFD1G8J49fh5tKKPnrYgbchGjA1OQHrR8RbmiZZgZXqq1zXITd806Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Code
 
 ### Import Packages
 

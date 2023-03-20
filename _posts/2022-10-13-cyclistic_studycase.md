@@ -1,5 +1,7 @@
 ---
 title: "Cyclistic bike-share analysis"
+layout: single
+classes: wide
 categories:
   - Portfolio
 tags:
@@ -7,7 +9,10 @@ tags:
   - Data Analysis
   - Data Visualization
   - Tableau
-toc: true
+excerpt: "Junior data analyst working in the marketing analyst team at Cyclistic, a bike-share
+                                company in Chicago. The director of marketing and Cyclistic's finance analysts believes
+                                the company's future success depends on maximizing the number of annual memberships."
+# toc: true
 ---
 
 This is a Capstone Project for the Google Data Analytics Professional

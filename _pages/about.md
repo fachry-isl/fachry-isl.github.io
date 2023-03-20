@@ -4,7 +4,7 @@ title: About
 
 layout: splash
 header:
-    image: /assets/images/dota2.webp
+    image: /assets/images/header1.png
 author_profile: true
 ---
 

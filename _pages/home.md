@@ -1,21 +1,14 @@
 ---
+title: " "
 layout: archive
 permalink: /
-title: " "
 author_profile: true
 header:
     overlay_color: "#000"
     overlay_filter: "0.1"
-    overlay_image: /assets/images/headerGlencoe.jpg
+    overlay_image: /assets/images/header1.png
 ---
 <h2>Recent Post<h2>
-<!-- {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
-{% for year in postsByYear %}
-  <h2 id="{{ year.name | slugify }}" class="archive__subtitle">{{ year.name }}</h2>
-  {% for post in year.items %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endfor %} -->
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}

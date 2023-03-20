@@ -14,7 +14,7 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-#theme: minimal-mistakes-jekyll
+theme: minimal-mistakes-jekyll
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -47,21 +47,24 @@ plugins:
 
 author:
   name   : "Fachry Ikhsal"
-  avatar : "/assets/images/fachry.jpeg"
+  avatar : "/assets/images/fachry2.png"
   bio    : "I enjoy solving interesting problems with data."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/fachry-isl"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/fachry-ikhsal-86aa121bb"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
 
 footer:
   links:

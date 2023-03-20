@@ -1,13 +1,17 @@
 ---
 title: "BPJS Healthkathon"
+layout: single
+classes: wide
 categories:
   - Portfolio
 tags:
   - Portfolio
   - Machine Learning
   - Supervised Learning
+  - Fraud Detection
   - Imbalanced Dataset
-toc: true
+excerpt: "Processing, cleaning and transforming 11 million BPJS data to find patterns and creating Fraud Detection model"
+# toc: true
 ---
 
 ### Load Packages
