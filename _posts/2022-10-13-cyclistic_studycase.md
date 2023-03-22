@@ -1,5 +1,5 @@
 ---
-title: "Cyclistic bike-share analysis"
+title: "Cyclistic Bike-Share Analysis"
 layout: single
 classes: wide
 categories:
@@ -16,9 +16,7 @@ excerpt: "Junior data analyst working in the marketing analyst team at Cyclistic
 ---
 
 This is a Capstone Project for the Google Data Analytics Professional
-Certification
-
-[link](https://www.coursera.org/professional-certificates/google-data-analytics?utm_source=gg&utm_medium=sem&utm_campaign=15-GoogleDataAnalytics-ROW&utm_content=B2C&campaignid=12566515400&adgroupid=117869292685&device=c&keyword=coursera%20data%20analytics%20course&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=507290840624&hide_mobile_promo&gclid=EAIaIQobChMI3v-Rncrj-AIVizMrCh0ukgRWEAAYASAAEgJ6YfD_BwE)
+Certification[link](https://www.coursera.org/professional-certificates/google-data-analytics?utm_source=gg&utm_medium=sem&utm_campaign=15-GoogleDataAnalytics-ROW&utm_content=B2C&campaignid=12566515400&adgroupid=117869292685&device=c&keyword=coursera%20data%20analytics%20course&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=507290840624&hide_mobile_promo&gclid=EAIaIQobChMI3v-Rncrj-AIVizMrCh0ukgRWEAAYASAAEgJ6YfD_BwE)
 
 ### Learning Objective
 
@@ -968,3 +966,26 @@ We can also extract our data for further more analysis using tableau.
 By using Tableau I could visualize the data, analyzing it, while also generating a report using some of the features. [Link](https://public.tableau.com/app/profile/fachry.ikhsal/viz/shared/PSS9NFZB2)
 
 ![](/assets/images/cyclistic_share.png)
+
+Or here
+
+## Project Report
+
+<div class='tableauPlaceholder' id='viz1679457964269' style='position: relative'>
+   <noscript><a href='#'><img alt='Main Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PW&#47;PWP5ZF9J5&#47;1_rss.png' style='border: none' /></a></noscript>
+   <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='path' value='shared&#47;PWP5ZF9J5' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;PW&#47;PWP5ZF9J5&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+   </object>
+</div>
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1679457964269');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+

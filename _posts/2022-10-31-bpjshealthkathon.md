@@ -10,6 +10,7 @@ tags:
   - Supervised Learning
   - Fraud Detection
   - Imbalanced Dataset
+  - Competition
 excerpt: "Processing, cleaning and transforming 11 million BPJS data to find patterns and creating Fraud Detection model"
 # toc: true
 ---

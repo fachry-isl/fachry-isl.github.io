@@ -8,6 +8,8 @@ tags:
   - Portfolio
   - Machine Learning
   - Supervised Learning
+  - Imbalanced Dataset
+  - Internship
 excerpt: "In january 2023, I got an opportunity to create machine learning models for evaluating Loan Application in ID/X. This problem classify as supervised learning. But interestingly we don't have a target label to begin with. Therefore, we need to define using available features."
 # toc: true
 ---
@@ -55,6 +57,10 @@ from collections import Counter
 import category_encoders as ce
 from pickle import dump
 ```
+
+    c:\Users\ASUS\anaconda3\envs\tf2.8\lib\site-packages\xgboost\compat.py:36: FutureWarning: pandas.Int64Index is deprecated and will be removed from pandas in a future version. Use pandas.Index with the appropriate dtype instead.
+      from pandas import MultiIndex, Int64Index
+    
 
 
 ```python
@@ -1202,7 +1208,7 @@ plt.show()
 
 
     
-![png](output_28_0.png)
+![png](/assets/images/idx2022_files/output_28_0.png)
     
 
 
@@ -1545,7 +1551,7 @@ plt.show()
 
 
     
-![png](output_41_0.png)
+![png](/assets/images/idx2022_files/output_41_0.png)
     
 
 
@@ -1754,7 +1760,7 @@ plt.show()
 
 
     
-![png](output_58_1.png)
+![png](/assets/images/idx2022_files/output_58_1.png)
     
 
 
@@ -1939,7 +1945,7 @@ plot_precision_recall_curve(models_info)
 
 
     
-![png](output_72_0.png)
+![png](/assets/images/idx2022_files/output_72_0.png)
     
 
 
@@ -2073,7 +2079,7 @@ plot_precision_recall_curve(models_info_resampling_lr)
 
 
     
-![png](output_77_0.png)
+![png](/assets/images/idx2022_files/output_77_0.png)
     
 
 
@@ -2128,7 +2134,7 @@ plot_precision_recall_curve(models_info_resampling_rf)
 
 
     
-![png](output_81_0.png)
+![png](/assets/images/idx2022_files/output_81_0.png)
     
 
 
@@ -2440,7 +2446,7 @@ plot_metrics(history)
 
 
     
-![png](output_98_0.png)
+![png](/assets/images/idx2022_files/output_98_0.png)
     
 
 
@@ -2631,7 +2637,7 @@ plt.show()
 
 
     
-![png](output_106_0.png)
+![png](/assets/images/idx2022_files/output_106_0.png)
     
 
 

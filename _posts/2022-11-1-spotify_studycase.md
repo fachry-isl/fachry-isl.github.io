@@ -1,5 +1,5 @@
 ---
-title: "Spotify Study Case"
+title: "Spotify Data Analysis"
 classes: wide
 layout: single
 categories:
