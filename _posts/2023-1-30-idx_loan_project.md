@@ -394,13 +394,13 @@ features_selection=['loan_amnt','dti', 'int_rate', 'emp_length','annual_inc', 'd
 ```
 
 ### Encode Categorical Data
-There is no single best encoding technique for all datasets, the best encoding technique will depend on the characteristics of your dataset and the specific problem you are trying to solve. However, when dealing with imbalanced dataset and loan prediction problem, there are some encoding techniques that are particularly well-suited:
+There is no single best encoding technique for all datasets, the best encoding technique will depend on the characteristics of your dataset and the specific problem you are trying to solve. However, when dealing with imbalanced datasets and loan prediction problems, there are some encoding techniques that are particularly well-suited:
 
-- The Weight of Evidence (WOE) Encoding: This is a technique for encoding categorical variables that is particularly useful for datasets with imbalanced classes. It works by replacing each category with the log ratio of the probability of the target variable being 1 for that category to the probability of the target variable being 0. This helps to highlight the relationship between each category and the target variable, and can be particularly useful for datasets with imbalanced classes.
+- The Weight of Evidence (WOE) Encoding: This is a technique for encoding categorical variables that is particularly useful for datasets with imbalanced classes. It works by replacing each category with the log ratio of the probability of the target variable being 1 for that category to the probability of the target variable being 0. This helps to highlight the relationship between each category and the target variable and can be particularly useful for datasets with imbalanced classes.
 
-- Target Encoding: This technique encodes categorical variables by replacing each category with the average value of the target variable for that category. This can help to reduce the number of unique categories and provide more robust feature encoding. Target encoding can be a good choice when dealing with imbalanced datasets, because it can help to highlight the relationship between each category and the target variable.
+- Target Encoding: This technique encodes categorical variables by replacing each category with the average value of the target variable for that category. This can help to reduce the number of unique categories and provide more robust feature encoding. Target encoding can be a good choice when dealing with imbalanced datasets because it can help to highlight the relationship between each category and the target variable.
 
-- LeaveOneOut Encoding: This is a technique for encoding categorical variables that is similar to target encoding. It works by replacing each category with the average value of the target variable for all examples in the dataset, except for the one being encoded. This can help to reduce the number of unique categories and provide more robust feature encoding. LeaveOneOut Encoding can be a good choice when dealing with imbalanced.
+- LeaveOneOut Encoding: This is a technique for encoding categorical variables that is similar to target encoding. It works by replacing each category with the average value of the target variable for all examples in the dataset, except for the one being encoded. This can help to reduce the number of unique categories and provide more robust feature encoding. LeaveOneOut Encoding can be a good choice when dealing with imbalances.
 
 In this phase, I choose Target Encoding.
 
@@ -420,7 +420,7 @@ df_fs_enc = pd.concat([df_fs, X_encoded], axis=1).drop(categorical_features, axi
 ```
 
 ### Dataset Splitting
-After encode the dataset we can separate the dataset into two groups.
+After encoding the dataset we can separate the dataset into two groups.
 
 | data             | % of total | Description |
 |------------------|:----------:|:---------|
@@ -435,7 +435,7 @@ X_train, X_cv, y_train, y_cv = train_test_split(X,y,test_size=0.20, random_state
 ```
 
 ### Feature Scaling
-The last step before we perform modeling is we need to scale the data. Feature scaling applied to ensure that all features are on a similar scale, which can be beneficial for many machine learning algorithms and optimization methods. In this step I use Robust Scaler since it is less prone to outliers.
+The last step before we perform modeling is we need to scale the data. Feature scaling is applied to ensure that all features are on a similar scale, which can be beneficial for many machine learning algorithms and optimization methods. In this step, I use Robust Scaler since it is less prone to outliers.
 
 
 ```python
@@ -498,12 +498,12 @@ print("Classification Report:\n",CR_LR)
 
 Since the class are imbalanced the model struggling to identify the minority class "0". From here there are two ways we can do to improve the model which is by modifying the model and the data.
 - Data: 
-  - Apply Resampling technique such as undersampling or oversampling using SMOTE to mitigate the imbalanced data problem
+  - Apply Resampling techniques such as undersampling or oversampling using SMOTE to mitigate the imbalanced data problem
   - Feature Engineering
 - Model:
   - Hyperparameter Tuning
 
-Besides that, there is a need to use specific plotting technique to see how the model performs on the imbalanced dataset. Based on [this post](https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/) we need to use precision-recall curves for plotting as opposed to ROC curves.
+Besides that, there is a need to use a specific plotting technique to see how the model performs on the imbalanced dataset. Based on [this post](https://machinelearningmastery.com/roc-curves-and-precision-recall-curves-for-classification-in-python/) we need to use precision-recall curves for plotting as opposed to ROC curves.
 
 #### When to Use ROC vs. Precision-Recall Curves?
 Generally, the use of ROC curves and precision-recall curves are as follows:
@@ -513,12 +513,12 @@ The reason for this recommendation is that ROC curves present an optimistic pict
 
 > However, ROC curves can present an overly optimistic view of an algorithm’s performance if there
 > is a large skew in the class distribution. […] Precision-Recall (PR) curves, often used in Information
-> Retrieval , have been cited as an alternative to ROC curves for tasks with a large skew in the class
+> Retrieval, has been cited as an alternative to ROC curves for tasks with a large skew in the class
 > distribution.
 
 — [The Relationship Between Precision-Recall and ROC Curves](https://dl.acm.org/doi/10.1145/1143844.1143874), 2006.
 
-So based on the baseline model I have plotted the model using Precision-Recall curve using below code.
+So based on the baseline model I have plotted the model using the Precision-Recall curve using below code.
 
 ```python
 # predict probabilities
@@ -551,7 +551,7 @@ plt.show()
 ![png](/assets/images/idx2022_files/output_58_1.png)
 
 ### Resampling Technique
-In this step, we modify the data by applying resampling techniques to mitigate the imbalanced problem. The resampling techniques used in this step is a combination of Oversampling and Undersampling.
+In this step, we modify the data by applying resampling techniques to mitigate the imbalanced problem. The resampling techniques used in this step are a combination of Oversampling and Undersampling.
 
 #### Data before resampling
 ```python
@@ -573,10 +573,10 @@ Counter(y_train_resample)
 ```
     Counter({0: 329470, 1: 329470})
 
-We can see after the resampling the proportion of the data is 50/50 for both classes. However, The specific ratio of the minority and majority class will varies depending on the dataset. To find the best ratio we just have to train the model in different ratios and compare it performances on different ratios.
+We can see after the resampling the proportion of the data is 50/50 for both classes. However, The specific ratio of the minority and majority classes will vary depending on the dataset. To find the best ratio we just have to train the model in different ratios and compare its performances on different ratios.
 
 #### Logistic Regression: Resample ratio Tuning
-In this step I have try different over and under proportions and see how it affects the performance of the Logistic Regression models.
+In this step, I have tried different over and under proportions and see how it affects the performance of the Logistic Regression models.
 
 
 ```python
@@ -588,7 +588,7 @@ plot_precision_recall_curve(models_info_resampling_lr)
 
 
 #### Random Forest: Resample ratio Tuning
-In this step I have try different over and under proportions and see how it affects the performance of the Random Forest models.
+In this step, I have tried different over and under proportions and see how it affects the performance of the Random Forest models.
 
 ```python
 plot_precision_recall_curve(models_info_resampling_rf)
@@ -597,17 +597,17 @@ plot_precision_recall_curve(models_info_resampling_rf)
 ![png](/assets/images/idx2022_files/output_81_0.png)
 
 
-From above experiment model we got several findings:
-- Resampling does help model to perform better in classifying minority class, if we compared with base model without resample.
+From the above experiment model, we got several findings:
+- Resampling does help the model to perform better in classifying minority classes if we compared it with the base model without resampling.
 - The portion of under and oversampling slightly affect the F1 score.
-- the best portion for sampling_strategy we found is really depends on the model, on logistic (0.5, 0,5) is the best, while rf (0.5, 0.9) is the best.
+- the best portion for sampling_strategy we found really depends on the model, on logistic (0.5, 0,5) is the best, while rf (0.5, 0.9) is the best.
 - the (0.5, 0.5) portion is perform worst on rf: resample model, this might indicate that the portion is not stable.
 
 Conclusion:
-We choose (0.5, 0.9) because it perform well on logistic, and random forest.
+We choose (0.5, 0.9) because it performs well on logistic, and random forest.
 
 ### Training model with (0.5, 0.9) Resampling data
-In this step I have trained neural network and XGB model with the new resampled dataset and comeup with different F1 scores. In this scenario logistic Regression produce the highest result for predicting minority class (0), with the second highest neural network.
+In this step, I have trained the neural network and XGB model with the new resampled dataset and come up with different F1 scores. In this scenario, logistic Regression produces the highest result for predicting minority class (0), with the second highest neural network.
 
 
 ```python
@@ -667,7 +667,7 @@ models_info
 </div>
 
 ### Feature Engineering (Polynomial Degree)
-In this step I'm trying to create new features using polynomial pegree, polynomial degree features will produce more complex model to capture more complex relationship in our data.
+In this step, I'm trying to create new features using polynomial degrees, polynomial degree features will produce a more complex model to capture more complex relationships in our data.
 
 ```python
 train_errors = []
@@ -695,8 +695,8 @@ for degree in range(1, 5):
 ```
 
 
-#### What is the good number of polynomial degree?
-When we're talking about polynomial degree, it's a trade-off between accuracy and complexity of the model. in this case three offers complexity with reasonable amount of error
+#### What is the good number of polynomial degrees?
+When we're talking about polynomial degrees, it's a trade-off between the accuracy and complexity of the model. In this case, three offers complexity with a reasonable amount of error.
 
 
 ```python
@@ -716,7 +716,7 @@ plt.show()
 ![png](/assets/images/idx2022_files/output_106_0.png)
 
 ### Hyperparameter tuning
-In this step we will do hyperparameter tuning, in this step I will only try hyperparameter tuning on LR model to make it short since it produce the best F1-score from the previous recap
+In this step, we will do hyperparameter tuning I will only try hyperparameter tuning on the LR model to make it short since it produces the best F1 score from the previous recap
 #### Logistic Regression
 ```python
 lr_tuning = LogisticRegression(random_state=42)
@@ -751,10 +751,10 @@ best_clf_lr_tuning = clf_lr_tuning.fit(X_poly_train,y_train_resample)
     F1: tf.Tensor(0.8239226, shape=(), dtype=float32)
     Area under precision (AUC) Recall: 0.9641245892153532
     
-From the classification report the model produce 0.56 F1-score and 0.96 AUC score which is good for Loan Application prediction.
+From the classification report, the model produces a 0.56 F1-score and 0.96 AUC score which is good for Loan Application prediction.
 
 ## Project Report
-After completing this project I created the PowerPoint presentation using Google Slide which can be accessed below.
+After completing this project I created the PowerPoint presentation using Google Slides which can be accessed below.
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTcaRuNHESeRFD1G8J49fh5tKKPnrYgbchGjA1OQHrR8RbmiZZgZXqq1zXITd806Q/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-This are just summaries of what I have done, if you want take a look into more details you can accessed the full notebook on Github [here](https://github.com/fachry-isl/loan-prediction/blob/main/idx_loan_project.ipynb).
+These are just summaries of what I have done if you wanna take a look into more details you can access the full notebook on GitHub [here](https://github.com/fachry-isl/loan-prediction/blob/main/idx_loan_project.ipynb).
