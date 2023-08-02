@@ -9,7 +9,7 @@ tags:
   - Data Analysis
   - Data Visualization
   - Internship
-excerpt: "In November 2022, I got an experience to learn how to process Campaign's data and turn it into insight"
+excerpt: "In November 2022, I got an opportunity to do a virtual internship experience in Campaign as a Data Analyst Intern."
 #toc: true
 ---
 # 1. Aims, objectives, and background
