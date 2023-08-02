@@ -10,7 +10,7 @@ tags:
   - Supervised Learning
   - Imbalanced Dataset
   - Internship
-excerpt: "In january 2023, As the final project of my contract period as an intern Data Scientist at ID/X Partners, this time I got involved in a project from a lending company and collaborate with various other departments on this project to provide technology solutions for the company."
+excerpt: "In january 2023, I got involved in a project of my contract period as an intern Data Scientist at ID/X Partners."
 header:
   image: "assets/images/headerGlencoe.jpg"
 #toc: true
