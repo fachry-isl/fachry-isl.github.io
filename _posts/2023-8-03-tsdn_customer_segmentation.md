@@ -170,7 +170,7 @@ df_segm_analysis = df_segm_kmeans.groupby(['Segment K-means']).mean()
 df_segm_analysis
 ```
 
-"We perform an analysis of the K-means clusters by calculating the mean values for each cluster. Using the 'groupby' function on 'df_segm_kmeans', we group the data by the 'Segment K-means' column, which represents the cluster labels assigned by K-means. Then, we compute the average values of all other columns within each cluster. The resulting 'df_segm_analysis' DataFrame presents the mean values for each feature across the different K-means clusters, offering insights into the characteristics of each customer segment."
+We perform an analysis of the K-means clusters by calculating the mean values for each cluster. Using the 'groupby' function on 'df_segm_kmeans', we group the data by the 'Segment K-means' column, which represents the cluster labels assigned by K-means. Then, we compute the average values of all other columns within each cluster. The resulting 'df_segm_analysis' DataFrame presents the mean values for each feature across the different K-means clusters, offering insights into the characteristics of each customer segment.
 
 | Segment K-means | Gender | Age       | Income     | Spending Score |
 |-----------------|--------|-----------|------------|----------------|
