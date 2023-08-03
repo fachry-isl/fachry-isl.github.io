@@ -751,7 +751,7 @@ best_clf_lr_tuning = clf_lr_tuning.fit(X_poly_train,y_train_resample)
     F1: tf.Tensor(0.8239226, shape=(), dtype=float32)
     Area under precision (AUC) Recall: 0.9641245892153532
     
-From the classification report, the model produces a 0.56 F1-score and 0.96 AUC score which is good for Loan Application prediction.
+From the output, the model produces a 0.82 F1-score and 0.96 AUC score which is good for Loan Application prediction.
 
 ## Project Report
 After completing this project I created the PowerPoint presentation using Google Slides which can be accessed below.
