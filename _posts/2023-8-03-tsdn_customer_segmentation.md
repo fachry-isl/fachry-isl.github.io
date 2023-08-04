@@ -223,7 +223,7 @@ Plot the cumulative variance explained by total number of components.
 
 ![png](/assets/images/tsdn2022_files/output_40_1.png)
 
-On this graph we choose the subset of components we want to keep. Generally, we want to keep around 80 % of the explained variance.  We choose three components. 2 or 3 seems the right choice according to the previous graph.
+On this graph we choose the subset of components we want to keep. Generally, we want to keep around 80 % of the explained variance.  We choose three components. 3 seems the right choice according to the previous graph.
 
 ```python
 pca = PCA(n_components = 3)
