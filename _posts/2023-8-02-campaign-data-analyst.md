@@ -12,6 +12,9 @@ tags:
 excerpt: "In November 2022, I got an opportunity to do a virtual internship experience in Campaign as a Data Analyst Intern."
 #toc: true
 ---
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT7BL7WxNaSdbweXdKlF1J-Zfz1umOnRA2ZQx5cCM7qFLZHPSVCOp-45aqqI8VecA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 # 1. Aims, objectives, and background
 ## 1.1 Background
 In November 2022, I got an opportunity to do a virtual internship experience in [Campaign](https://campaign.com/). In this internship, I got to work with Campaign's datasets about Membangun Indonesia dari Keluarga dan Ciptakan Lingkungan yang Setara. The datasets have been collected from June 2022 to September 2022. The objectives are to find the differences and relationships between both challenges and present the key findings in the form of visual media that presents narrative insights that can be obtained from both challenges.
@@ -197,5 +200,3 @@ Based on the key findings if the goal is to gain supporters, It is recommended t
 Because it takes more effort for the supporter to finish the challenge, so **simplicity** is the key.
 
 And that pretty much answers all of the project [objectives](#13-the-objectives) the summarization of the project is also available in the form of Google Slides below:
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT7BL7WxNaSdbweXdKlF1J-Zfz1umOnRA2ZQx5cCM7qFLZHPSVCOp-45aqqI8VecA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
