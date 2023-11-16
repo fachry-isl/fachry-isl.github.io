@@ -73,6 +73,33 @@ riders would buy a membership, and how digital media could affect their
 marketing tactics. Moreno and her team are interested in analyzing the
 Cyclistic historical bike trip data to identify trends.
 
+## Project Report
+<div class='tableauPlaceholder' id='viz1691117505855' style='position: relative'>
+   <noscript><a href='#'><img alt='Main Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C3&#47;C32GM88PQ&#47;1_rss.png' style='border: none' /></a></noscript>
+   <object class='tableauViz'  style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='path' value='shared&#47;C32GM88PQ' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C3&#47;C32GM88PQ&#47;1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+   </object>
+</div>
+
+<script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1691117505855');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
 ## Getting Started
 
 I will be using the 6 phases of the analysis process (Ask, Prepare,
@@ -866,32 +893,5 @@ By using Tableau I could visualize the data, analyzing it, while also generating
 
 ![](/assets/images/cyclistic_share.png)
 
-## Project Report
 
-
-<div class='tableauPlaceholder' id='viz1691117505855' style='position: relative'>
-   <noscript><a href='#'><img alt='Main Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C3&#47;C32GM88PQ&#47;1_rss.png' style='border: none' /></a></noscript>
-   <object class='tableauViz'  style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='path' value='shared&#47;C32GM88PQ' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;C3&#47;C32GM88PQ&#47;1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-   </object>
-</div>
-
-<script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1691117505855');                    
-    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-    var scriptElement = document.createElement('script');                    
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>
 
