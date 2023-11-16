@@ -29,14 +29,15 @@ The dataset is created for the learning purpose of the customer segmentation con
 - Create visual media in a form of a Powerpoint presentation
 - Create narrative insights that can be obtained from this project.
 
-## The Final Result
+## Project Output
 
 ![png](/assets/images/tsdn2022_files/output_1.png)
 
-## Summary
 By leveraging customer segmentation, we can tailor various product aspects, including prices, features, and marketing strategies, to specific customer groups. This targeted approach ensures that our efforts are precisely aligned with their preferences, ultimately leading to a reduction in resource utilization compared to employing generalized marketing campaigns across all customer segments. The rationale behind this strategy lies in the fact that customers belonging to distinct segments tend to exhibit diverse reactions to marketing activities, making personalized approaches more effective and efficient.
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfJl2xsCwgoBSlx4yKH1C231qOUuYmsXLBWeofqf1QGiyUdk9QJFX9rtXY0gp0sA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+---
 
 # The Code
 ## Import Libraries
