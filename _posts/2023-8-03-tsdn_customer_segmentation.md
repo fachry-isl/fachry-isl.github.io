@@ -29,6 +29,15 @@ The dataset is created for the learning purpose of the customer segmentation con
 - Create visual media in a form of a Powerpoint presentation
 - Create narrative insights that can be obtained from this project.
 
+## The Final Result
+
+![png](/assets/images/tsdn2022_files/output_1.png)
+
+## Summary
+By leveraging customer segmentation, we can tailor various product aspects, including prices, features, and marketing strategies, to specific customer groups. This targeted approach ensures that our efforts are precisely aligned with their preferences, ultimately leading to a reduction in resource utilization compared to employing generalized marketing campaigns across all customer segments. The rationale behind this strategy lies in the fact that customers belonging to distinct segments tend to exhibit diverse reactions to marketing activities, making personalized approaches more effective and efficient.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfJl2xsCwgoBSlx4yKH1C231qOUuYmsXLBWeofqf1QGiyUdk9QJFX9rtXY0gp0sA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 # The Code
 ## Import Libraries
 In this project, I use some of these Python libraries to help me achieve my goal they serve different purposes from data processing, visualization, and modeling.
@@ -344,15 +353,5 @@ We continue to visualize the customer segmentation results using PCA-based K-mea
 
 ![png](/assets/images/tsdn2022_files/output_66_1.png)
 
-## The Final Result
-
-![png](/assets/images/tsdn2022_files/output_1.png)
-
-## Summary
-By leveraging customer segmentation, we can tailor various product aspects, including prices, features, and marketing strategies, to specific customer groups. This targeted approach ensures that our efforts are precisely aligned with their preferences, ultimately leading to a reduction in resource utilization compared to employing generalized marketing campaigns across all customer segments. The rationale behind this strategy lies in the fact that customers belonging to distinct segments tend to exhibit diverse reactions to marketing activities, making personalized approaches more effective and efficient.
-
-And that pretty much answers all of the projects [objectives](#the-objectives) the summarization of the project is also available in the form of Google Slides below:
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfJl2xsCwgoBSlx4yKH1C231qOUuYmsXLBWeofqf1QGiyUdk9QJFX9rtXY0gp0sA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 These are just summaries of what I have done if you wanna take a look into more details you can access the full notebook on GitHub [here](https://github.com/fachry-isl/tsdn-customer-segmentation/blob/main/TSDN_Main.ipynb).
