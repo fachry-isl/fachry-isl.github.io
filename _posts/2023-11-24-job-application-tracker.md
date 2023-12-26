@@ -28,7 +28,7 @@ Below is the view of the dashboard that describes how things are going:
 
 ![png](/assets/images/jobtracker_files/dashboard.png)
 
-As you can see the dashboard is already filled with my job applications data from the past. I have a 3.85% Interview Rate over 26 applications this pretty much gives us an idea of how do we perform in a job market. Why do we choose Interview Rate as KPI instead of Total Interview?
+As you can see the dashboard is already filled with job applications data. I have a 3.85% Interview Rate over 26 applications this pretty much gives us an idea of how do we perform in a job market. Why do we choose Interview Rate as KPI instead of Total Interview?
 
 > Interview Rate helps us quantify our quality in the job market by quantifying the higher number of 
 > interviews with the total applications. Without additional effort, we are sure gonna get more total interviews but you will approximately get the same interview rate. (See table 1).
