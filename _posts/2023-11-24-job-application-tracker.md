@@ -26,7 +26,7 @@ The goal of this project is to increase **Interview Rate** by analyzing the job 
 
 Below is the view of the dashboard that describes how things are going:
 
-<iframe width="1100" height="570" src="https://rvinz-my.sharepoint.com/:x:/g/personal/fachry_ikhsal_rvinz_onmicrosoft_com/EfuiuVGPauhAqN5Hum-B1uEBQPB2uOCwrUg4uWkzvxUH8A?e=P1qcjk&action=embedview&wdHideSheetTabs=True&wdHideHeaders=True&wdAllowInteractivity=True&wdDownloadButton=True"></iframe>
+![png](/assets/images/jobtracker_files/dashboard.png)
 
 As you can see the dashboard is already filled with my job applications data from the past. I have a 3.85% Interview Rate over 26 applications this pretty much gives us an idea of how do we perform in a job market. Why do we choose Interview Rate as KPI instead of Total Interview?
 
